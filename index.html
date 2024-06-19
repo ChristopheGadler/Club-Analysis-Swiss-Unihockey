@@ -10,9 +10,9 @@
             margin: 0;
             padding: 0;
             background-color: #f9f9f9;
-            background-image: url("C:\Users\ChristopheGadler\OneDrive - swiss unihockey\Bilder\Cockpit\New hub.png"); /* Chemin vers votre image */
-            background-size: cover; /* Ajuste la taille de l'image pour couvrir tout l'arrière-plan */
-            background-position: center; /* Centre l'image de fond */
+            background-image: url('https://play-lh.googleusercontent.com/W--3RnWcndrB-7X0MAsqgqRdygSbjQmgk3Fu7uOgr2vQt9Y9Oa01Yz-M10VeNWyIuRg=s180-rw'); /* Image de fond */
+            background-size: cover;
+            background-position: center;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -24,6 +24,8 @@
             padding: 20px;
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 600px; /* Largeur maximale du contenu */
+            margin: 20px;
         }
         h1 {
             color: #333;
@@ -32,8 +34,8 @@
         }
         .links {
             display: flex;
-            justify-content: center; /* Centrer les cases horizontalement */
-            flex-wrap: nowrap; /* Empêcher le passage à la ligne */
+            flex-direction: column; /* Disposer les liens verticalement */
+            align-items: center; /* Centrer les liens horizontalement */
         }
         .link-box {
             color: white;
@@ -41,7 +43,7 @@
             margin: 10px;
             border-radius: 10px;
             text-align: center;
-            width: 200px;
+            width: 300px; /* Largeur des cases */
             background-color: rgba(0, 0, 0, 0.8); /* Fond moins transparent */
             transition: background-color 0.3s, transform 0.3s;
         }
