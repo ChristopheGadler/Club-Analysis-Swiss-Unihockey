@@ -13,7 +13,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            min-height: 100vh; /* Utiliser la hauteur totale de la vue */
+            min-height: 100vh;
             background-image: url('https://play-lh.googleusercontent.com/TCzoIDpkHuX4403Wd2cAVwmV_-zyQq2cmS9fqR4YVwOwPHhPDOXDECino8IE66O_GT8L=w240-h480-rw');
             background-size: cover;
             background-position: center;
@@ -21,27 +21,27 @@
 
         .container {
             text-align: center;
-            background-color: rgba(255, 255, 255, 0.8); /* Fond semi-transparent pour le contenu */
+            background-color: rgba(255, 255, 255, 0.9);
             padding: 20px;
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            max-width: 800px; /* Largeur maximale du contenu */
-            width: 90%; /* Largeur adaptative */
-            max-height: 90%; /* Hauteur maximale du contenu */
-            overflow-y: auto; /* Activation du défilement vertical si nécessaire */
+            max-width: 800px;
+            width: 90%;
+            max-height: 90%;
+            overflow-y: auto;
         }
 
         h1 {
             color: #333;
             margin-bottom: 20px;
-            font-size: 24px; /* Taille de police augmentée */
+            font-size: 24px;
         }
 
         .links {
             display: flex;
-            flex-wrap: wrap; /* Permettre le retour à la ligne des liens */
-            justify-content: center; /* Centrer les liens horizontalement */
-            gap: 20px; /* Espacement entre les liens */
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
         }
 
         .link-box {
@@ -49,21 +49,17 @@
             padding: 20px;
             border-radius: 10px;
             text-align: center;
-            width: 250px; /* Largeur des cases */
-            background-color: rgba(0, 0, 0, 0.8); /* Fond moins transparent */
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ajout d'une ombre */
-            transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s; /* Transition de l'ombre */
-            font-size: 18px; /* Taille de police */
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
+            width: 250px;
+            background-color: rgba(0, 0, 0, 0.8);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+            font-size: 18px;
             text-decoration: none;
         }
 
         .link-box:hover {
             transform: translateY(-5px);
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Ombre plus prononcée au survol */
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
         }
 
         .club-guidelines {
@@ -110,30 +106,19 @@
             text-decoration: none;
             color: white;
             font-size: 18px;
-            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Ajout d'une ombre au texte */
-        }
-
-        .link-box img {
-            max-width: 40px; /* Taille des icônes */
-            margin-bottom: 10px;
-        }
-
-        .description {
-            font-size: 14px;
-            color: #333;
-            margin-top: 5px;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
         }
 
         /* Media Queries pour les écrans plus petits et plus grands */
         @media screen and (max-width: 800px) {
             .link-box {
-                width: calc(50% - 20px); /* Utilisation de la moitié de la largeur avec marges */
+                width: calc(50% - 20px);
             }
         }
 
         @media screen and (max-width: 500px) {
             .link-box {
-                width: calc(100% - 20px); /* Utilisation de la largeur totale moins les marges */
+                width: calc(100% - 20px);
             }
         }
     </style>
@@ -142,31 +127,11 @@
     <div class="container">
         <h1>Club Analysis - swiss unihockey</h1>
         <div class="links">
-            <a class="link-box club-guidelines" href="https://forms.office.com/e/nMhR3h1gRa">
-                <img src="https://img.icons8.com/ios-filled/50/000000/document.png" alt="Guidelines Icon">
-                Club guidelines & strategy & statutes
-                <div class="description">Guide, stratégie et statuts du club</div>
-            </a>
-            <a class="link-box club-management" href="https://forms.office.com/e/zFD55a1eHb">
-                <img src="https://img.icons8.com/ios-filled/50/000000/management.png" alt="Management Icon">
-                Club Management
-                <div class="description">Gestion du club</div>
-            </a>
-            <a class="link-box future-floorball" href="https://forms.office.com/e/cZiu3Q4fmL">
-                <img src="https://img.icons8.com/ios-filled/50/000000/future.png" alt="Future Icon">
-                Future of Floorball
-                <div class="description">Avenir du floorball</div>
-            </a>
-            <a class="link-box floorball-management" href="https://forms.office.com/e/RxswDZXpLk">
-                <img src="https://img.icons8.com/ios-filled/50/000000/sport.png" alt="Sport Management Icon">
-                Floorball Management
-                <div class="description">Gestion du floorball</div>
-            </a>
-            <a class="link-box spirit-floorball" href="https://forms.office.com/e/fqUksEcZn1">
-                <img src="https://img.icons8.com/ios-filled/50/000000/heart.png" alt="Spirit Icon">
-                Spirit of Floorball
-                <div class="description">Esprit du floorball</div>
-            </a>
+            <a class="link-box club-guidelines" href="https://forms.office.com/e/nMhR3h1gRa">Club guidelines & strategy & statutes</a>
+            <a class="link-box club-management" href="https://forms.office.com/e/zFD55a1eHb">Club Management</a>
+            <a class="link-box future-floorball" href="https://forms.office.com/e/cZiu3Q4fmL">Future of Floorball</a>
+            <a class="link-box floorball-management" href="https://forms.office.com/e/RxswDZXpLk">Floorball Management</a>
+            <a class="link-box spirit-floorball" href="https://forms.office.com/e/fqUksEcZn1">Spirit of Floorball</a>
         </div>
     </div>
 </body>
