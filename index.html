@@ -11,7 +11,7 @@
             padding: 0;
             background-color: #f9f9f9;
             position: relative; /* Position relative pour permettre le positionnement absolu */
-            overflow: hidden; /* Cacher tout débordement de l'image floue */
+            overflow-x: hidden; /* Cacher tout débordement horizontal */
         }
 
         body::before {
@@ -35,6 +35,8 @@
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             max-width: 800px; /* Largeur maximale du contenu */
+            max-height: 100vh; /* Hauteur maximale de la fenêtre visible */
+            overflow-y: auto; /* Activer le défilement vertical si nécessaire */
             margin: 20px auto; /* Centrer le contenu */
         }
 
