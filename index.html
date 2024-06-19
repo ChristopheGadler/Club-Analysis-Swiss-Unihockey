@@ -26,33 +26,42 @@
             color: #333;
             margin-bottom: 20px;
         }
-        ul {
-            list-style-type: none;
-            padding: 0;
+        .links {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
         }
-        li {
-            margin: 10px 0;
+        .link-box {
+            background-color: #1a73e8;
+            color: white;
+            padding: 20px;
+            margin: 10px;
+            border-radius: 10px;
+            text-align: center;
+            width: 150px;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+        .link-box:hover {
+            background-color: #0c5ba7;
+            transform: translateY(-5px);
         }
         a {
             text-decoration: none;
-            color: #1a73e8;
+            color: white;
             font-size: 18px;
-        }
-        a:hover {
-            text-decoration: underline;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Club Analysis</h1>
-        <ul>
-            <li><a href=https://forms.office.com/e/nMhR3h1gRa>Part 1 : Club guidelines & strategy & statutes</a></li>
-            <li><a href=https://forms.office.com/e/zFD55a1eHb>Part 2 : Club Management</a></li>
-            <li><a href=https://forms.office.com/e/cZiu3Q4fmL>Part 3 : Future of Floorball</a></li>
-            <li><a href=https://forms.office.com/e/RxswDZXpLk>Part 4 : Floorball Management</a></li>
-            <li><a href=https://forms.office.com/e/fqUksEcZn1>Part 5 : Spirit of Floorball</a></li>
-        </ul>
+        <h1>Questionnaires</h1>
+        <div class="links">
+            <div class="link-box"><a href=https://forms.office.com/e/nMhR3h1gRa>Part 1 : Club guidelines & strategy & statutes</a></div>
+            <div class="link-box"><a href=https://forms.office.com/e/zFD55a1eHb>Part 2 : Club Management</a></div>
+            <div class="link-box"><a href=https://forms.office.com/e/cZiu3Q4fmL>Part 3 : Future of Floorball</a></div>
+            <div class="link-box"><a href=https://forms.office.com/e/RxswDZXpLk>Part 4 : Floorball Management</a></div>
+            <div class="link-box"><a href=https://forms.office.com/e/fqUksEcZn1>Part 5 : Spirit of Floorball</a></div>
+        </div>
     </div>
 </body>
 </html>
