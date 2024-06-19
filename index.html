@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mes Questionnaires</title>
+    <title>Club Analysis - swiss unihockey</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -25,11 +25,12 @@
         h1 {
             color: #333;
             margin-bottom: 20px;
+            font-size: 24px; /* Taille de police augmentée */
         }
         .links {
             display: flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
+            justify-content: center; /* Centrer les cases horizontalement */
+            flex-wrap: nowrap; /* Empêcher le passage à la ligne */
         }
         .link-box {
             color: white;
@@ -38,6 +39,7 @@
             border-radius: 10px;
             text-align: center;
             width: 200px;
+            background-color: rgba(0, 0, 0, 0.8); /* Fond moins transparent */
             transition: background-color 0.3s, transform 0.3s;
         }
         .link-box:hover {
@@ -82,7 +84,7 @@
 </head>
 <body>
     <div class="container">
-        <h1>Questionnaires</h1>
+        <h1>Club Analysis - swiss unihockey</h1>
         <div class="links">
             <div class="link-box club-guidelines"><a href="#">Club guidelines & strategy & statutes</a></div>
             <div class="link-box club-management"><a href="#">Club Management</a></div>
