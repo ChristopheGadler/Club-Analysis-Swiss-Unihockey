@@ -34,7 +34,7 @@
             padding: 20px;
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            max-width: 600px; /* Largeur maximale du contenu */
+            max-width: 800px; /* Largeur maximale du contenu */
             margin: 20px auto; /* Centrer le contenu */
         }
 
@@ -46,8 +46,8 @@
 
         .links {
             display: flex;
-            flex-direction: column; /* Disposer les liens verticalement */
-            align-items: center; /* Centrer les liens horizontalement */
+            flex-wrap: wrap; /* Permettre le retour à la ligne des liens */
+            justify-content: center; /* Centrer les liens horizontalement */
         }
 
         .link-box {
@@ -113,11 +113,16 @@
             font-size: 18px;
         }
 
-        /* Media Query pour les écrans plus petits (smartphones) */
-        @media screen and (max-width: 600px) {
+        /* Media Queries pour les écrans plus petits et plus grands */
+        @media screen and (max-width: 800px) {
+            .link-box {
+                width: calc(50% - 20px); /* Utilisation de la moitié de la largeur avec marges */
+            }
+        }
+
+        @media screen and (max-width: 500px) {
             .link-box {
                 width: calc(100% - 20px); /* Utilisation de la largeur totale moins les marges */
-                margin: 5px 10px; /* Marge plus petite */
             }
         }
     </style>
