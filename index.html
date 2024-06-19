@@ -10,15 +10,24 @@
             margin: 0;
             padding: 0;
             background-color: #f9f9f9;
+            position: relative; /* Position relative pour permettre le positionnement absolu */
+            overflow: hidden; /* Cacher tout débordement de l'image floue */
+        }
+
+        body::before {
+            content: "";
             background-image: url('https://play-lh.googleusercontent.com/TCzoIDpkHuX4403Wd2cAVwmV_-zyQq2cmS9fqR4YVwOwPHhPDOXDECino8IE66O_GT8L=w240-h480-rw');
             background-size: cover;
             background-position: center;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            filter: blur(5px); /* Ajout du flou */
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            filter: blur(5px); /* Ajout du flou à l'image de fond */
+            z-index: -1; /* Placer l'image de fond en arrière-plan */
         }
+
         .container {
             text-align: center;
             background-color: rgba(255, 255, 255, 0.8); /* Fond semi-transparent pour le contenu */
@@ -26,18 +35,21 @@
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             max-width: 600px; /* Largeur maximale du contenu */
-            margin: 20px;
+            margin: 20px auto; /* Centrer le contenu */
         }
+
         h1 {
             color: #333;
             margin-bottom: 20px;
             font-size: 24px; /* Taille de police augmentée */
         }
+
         .links {
             display: flex;
             flex-direction: column; /* Disposer les liens verticalement */
             align-items: center; /* Centrer les liens horizontalement */
         }
+
         .link-box {
             color: white;
             padding: 20px;
@@ -49,40 +61,52 @@
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ajout d'une ombre */
             transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s; /* Transition de l'ombre */
         }
+
         .link-box:hover {
             transform: translateY(-5px);
             box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Ombre plus prononcée au survol */
         }
+
         .club-guidelines {
             background-color: #B4C6E7;
         }
+
         .club-guidelines:hover {
             background-color: #9BAED0;
         }
+
         .club-management {
             background-color: #F8CBAD;
         }
+
         .club-management:hover {
             background-color: #E8B892;
         }
+
         .future-floorball {
             background-color: #E698D2;
         }
+
         .future-floorball:hover {
             background-color: #D37BB8;
         }
+
         .floorball-management {
             background-color: #FFE699;
         }
+
         .floorball-management:hover {
             background-color: #E6C275;
         }
+
         .spirit-floorball {
             background-color: #E2EFDA;
         }
+
         .spirit-floorball:hover {
             background-color: #C8DFB6;
         }
+
         a {
             text-decoration: none;
             color: white;
