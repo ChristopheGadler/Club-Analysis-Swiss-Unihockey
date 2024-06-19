@@ -10,22 +10,14 @@
             margin: 0;
             padding: 0;
             background-color: #f9f9f9;
-            position: relative; /* Position relative pour permettre le positionnement absolu */
-            overflow-x: hidden; /* Cacher tout débordement horizontal */
-        }
-
-        body::before {
-            content: "";
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh; /* Utiliser la hauteur totale de la vue */
             background-image: url('https://play-lh.googleusercontent.com/TCzoIDpkHuX4403Wd2cAVwmV_-zyQq2cmS9fqR4YVwOwPHhPDOXDECino8IE66O_GT8L=w240-h480-rw');
             background-size: cover;
             background-position: center;
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            filter: blur(5px); /* Ajout du flou à l'image de fond */
-            z-index: -1; /* Placer l'image de fond en arrière-plan */
+            filter: blur(5px); /* Flou de l'image de fond */
         }
 
         .container {
@@ -35,9 +27,9 @@
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             max-width: 800px; /* Largeur maximale du contenu */
-            max-height: 100vh; /* Hauteur maximale de la fenêtre visible */
-            overflow-y: auto; /* Activer le défilement vertical si nécessaire */
-            margin: 20px auto; /* Centrer le contenu */
+            width: 90%; /* Largeur adaptative */
+            max-height: 90%; /* Hauteur maximale du contenu */
+            overflow-y: auto; /* Activation du défilement vertical si nécessaire */
         }
 
         h1 {
